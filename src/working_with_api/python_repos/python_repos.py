@@ -69,6 +69,7 @@ def make_visualization(repo_links, stars, labels):
     offline.plot(fig, filename='js_repos.html')
 
 if __name__ == '__main__':
+    """Execute when this file is run directly, but not when it’s imported."""
     r = get_response()
     repo_dicts = get_repo_dicts(r)
     repo_links, stars, labels = get_project_data(repo_dicts)
