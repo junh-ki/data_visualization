@@ -18,8 +18,6 @@ def get_repo_dicts(r):
 
 def get_project_data(repo_dicts):
     """Return data needed for each project in visualization."""
-    response_dict = r.json()
-    repo_dicts = response_dict['items']
     repo_links, stars, labels = [], [], []
     for repo_dict in repo_dicts:
         repo_name = repo_dict['name']
